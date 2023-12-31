@@ -1,0 +1,33 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "This repository is a compilation of my professional materials that exemplifies my beliefs, skills, qualifications, education, training, and experiences",
+  "main": "index.html",
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "my-portfolio"
+  },
+  "author": "Priyanshu",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^3.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
