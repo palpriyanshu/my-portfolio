@@ -1,9 +1,17 @@
 import React from "react";
-import "./footer.css"
+import "./Footer.scss"
+import {Text} from "@chakra-ui/react";
 
 const Footer = () => {
-    return <footer className="footer">
-        <div>Designed and build by Priyanshu Pal</div>
+     return <footer className="footer">
+         <Text>
+             <p>Design By: <span className="highlight">Brittany Chiang</span></p>
+         </Text>
+         <Text>
+             <p>
+                 Build By: <span className="highlight">Priyanshu Pal</span>
+             </p>
+         </Text>
     </footer>
 }
 

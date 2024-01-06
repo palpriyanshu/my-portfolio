@@ -1,15 +1,21 @@
-import {ChakraProvider, Tab, TabIndicator, TabList, TabPanel, TabPanels, Tabs} from "@chakra-ui/react";
-import About from "./About";
 import React from "react";
+import NavBar from "../navBar/NavBar";
+import "./Header.scss"
+import {Img, Link} from "@chakra-ui/react";
 
 const Header = () => {
-    return <header>
-            <TabList alignSelf='end' >
-                <Tab>About</Tab>
-                <Tab>Experience</Tab>
-                <Tab>Work</Tab>
-                <Tab>Contact</Tab>
-            </TabList>
+    return <header className="header">
+        <div className={"logo"} tabIndex={-1}>
+        <Link href={"/"} aria-label="home">
+            <div className="hexagon-container">
+                <Img src="/img/hexagon.svg"/>
+            </div>
+        </Link>
+            <div className="logo-container">
+                <Img src="/img/logo.svg"/>
+            </div>
+        </div>
+        <NavBar justifyContent="flex-end"/>
     </header>
 }
 

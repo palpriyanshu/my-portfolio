@@ -1,0 +1,71 @@
+@import "../../style/theme.scss";
+
+.header{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    padding: 0 50px;
+    width: 100%;
+    height: $nav-scroll-height;
+    background-color: $darkest-navy;
+    backdrop-filter: blur(10px);
+    transition: $transition;
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+    transform: translateY(0px);
+    box-shadow: 0 10px 30px -10px $navy-shadow;
+
+    .logo {
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .logo a {
+        color: $green;
+        width: 42px;
+        height: 42px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .logo a:hover, .logo a:focus {
+        outline: 0;
+        transform: translate(-4px, -4px);
+    }
+
+    .logo a:hover .hexagon-container, .logo a:focus .hexagon-container {
+        transform: translate(4px, 3px);
+    }
+
+    .logo a .hexagon-container {
+        transition: $transition;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .logo a .hexagon-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo .logo-container{
+        position: relative;
+        z-index: 1;
+    }
+
+    .logo a .logo-container svg {
+        transition: $transition;
+    }
+}
+

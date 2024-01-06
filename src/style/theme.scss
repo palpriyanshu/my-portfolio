@@ -1,0 +1,76 @@
+$darkest-navy: rgba(10, 25, 47, 0.85);
+$dark-navy: #020c1b;
+$navy: #0a192f;
+$light-navy: #112240;
+$lightest-navy: #233554;
+$navy-shadow: #020c1bb3;
+$dark-slate: #495670;
+$slate: #8892b0;
+$light-slate: #a8b2d1;
+$lightest-slate: #ccd6f6;
+$dull-white: #e6f1ff;
+$white: #ffffff;
+$green: #64ffda;
+$green-tint: rgba(100,255,218,0.1);
+$pink: #f57dff;
+$blue: #57cbff;
+
+$font-sans: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+$font-mono: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+
+$font-xxs: 12px;
+$font-xs: 13px;
+$font-sm: 14px;
+$font-md: 16px;
+$font-lg: 18px;
+$font-xl: 20px;
+$font-xxl: 22px;
+
+$font-title: 80px;
+$font-sub-title: 75px;
+$font-heading: 32px;
+$border-radius: 4px;
+$nav-height: 100px;
+$nav-scroll-height: 70px;
+$tab-height: 42px;
+$tab-width: 120px;
+$top-margin: 240px;
+
+$easing: cubic-bezier(0.645,0.045,0.355,1);
+$transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+$hamburger-width: 30px;
+$ham-before: top 0.1s ease-in 0.25s,opacity 0.1s ease-in;
+$ham-before-active: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
+$ham-after: bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);
+$ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
+
+$desktop-breakpoint: 1025px;
+$iPad-breakpoint: 768px;
+$phone-max-width: 767px;
+$iPad-min-width: 768px;
+$iPad-max-width: 1024px;
+$desktop-min-width: 1025px;
+
+$border-size: 1px;
+
+$phone-screen: 600px;
+$iPad-p-screen: 768px;
+$iPad-l-screen: 1024px;
+$desktop-screen: 1200px;
+
+$phone-screen-up: 601px;
+$iPad-p-screen-up: 769px;
+$iPad-l-screen-up: 1025px;
+$desktop-screen-up: 1201px;
+
+
+$phone-only: "only screen and (max-width : #{$phone-screen})";
+$iPad-p-only: "only screen and (min-width : #{$phone-screen-up}) and (max-width : #{$iPad-p-screen})";
+$iPad-l-only: "only screen and (min-width : #{$iPad-p-screen-up}) and (max-width : #{$iPad-l-screen})";
+$desktop-only: "only screen and (min-width : #{$iPad-l-screen-up}) and (max-width : #{$desktop-screen})";
+$iPad-p-and-down: "only screen and (max-width : #{$iPad-p-screen})";
+$iPad-l-and-down: "only screen and (max-width : #{$iPad-l-screen})";
+$desktop-and-down: "only screen and (max-width : #{$desktop-screen})";
+$iPad-p-and-up: "only screen and (min-width : #{$phone-screen-up})";
+$iPad-l-and-up: "only screen and (min-width : #{$iPad-p-screen-up})";
+$desktop-and-up: "only screen and (min-width : #{$iPad-l-screen-up})";

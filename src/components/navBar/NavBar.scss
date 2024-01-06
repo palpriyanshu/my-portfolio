@@ -1,0 +1,51 @@
+@import "../../style/theme.scss";
+
+.nav-bar{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: $lightest-slate;
+    font-family: $font-mono;
+    counter-reset: item 0;
+    z-index: 12;
+
+    .tab{
+        align-items: center;
+        background: transparent;
+        line-height: inherit;
+        color: inherit;
+        padding: 1em;
+        margin: 0 5px;
+        position: relative;
+        counter-increment: item 1;
+        font-size: $font-xs;
+    }
+
+    .tab:hover{
+        color: $green;
+    }
+
+    .resume-button {
+        transition: $transition;
+        background-color: transparent;
+        color: $green;
+        align-self: center;
+        border: 1px solid $green;
+        font-size: $font-sm;
+        font-family: $font-mono;
+        border-radius: $border-radius;
+    }
+
+    .resume-button:hover, .resume-button:focus-visible {
+        transition-delay: 200ms;
+        background-color: transparent;
+        outline: none;
+        box-shadow: 4px 4px 0 0 $green;
+        transform: translate(-5px, -5px);
+    }
+}
+

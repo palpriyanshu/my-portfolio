@@ -1,0 +1,81 @@
+@import "../../style/theme.scss";
+
+.side-bar{
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    color: $light-slate;
+}
+
+.left {
+    left: 40px;
+    right: auto;
+
+    .nav-links {
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        color: inherit;
+        position: relative;
+        transition: $transition;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .nav-links li a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-links::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0 auto;
+        background-color: $light-slate;
+    }
+}
+
+.right {
+    left: auto;
+    right: 40px;
+
+    .gmail-section{
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .gmail-section a {
+        margin: 20px auto;
+        padding: 10px;
+        font-family: $font-mono;
+        font-size: $font-xxs;
+        line-height: $font-lg;
+        letter-spacing: 0.1em;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+
+    .gmail-section::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0 auto;
+        background-color: $light-slate;
+    }
+}
