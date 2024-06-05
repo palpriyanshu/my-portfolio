@@ -8,6 +8,7 @@ import RightSideBar from "../components/sideBar/RightSideBar";
 import Experience from "../components/experience/Experience";
 import "./App.scss"
 import Contact from "../components/contact/Contact";
+import Work from "../components/work/Work";
 
 const Header = React.lazy(() => import('../components/header/Header'));
 const Banner = React.lazy(() => import('../components/banner/Banner'));
@@ -22,6 +23,7 @@ const App = () => {
       <React.Suspense><Banner/></React.Suspense>
       <About/>
       <Experience/>
+      <Work/>
       <Contact/>
     </main>
     <Footer/>
