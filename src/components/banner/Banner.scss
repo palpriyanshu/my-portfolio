@@ -51,7 +51,7 @@
         .email-link {
             color: $green;
             background-color: transparent;
-            border: 1px solid $green;
+            border: $border-size solid $green;
             border-radius: $border-radius;
             padding: 1.25rem 1.75rem;
             font-size: $font-sm;

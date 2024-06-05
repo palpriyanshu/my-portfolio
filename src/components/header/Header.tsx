@@ -10,12 +10,12 @@ const Header = () => {
             <div className="hexagon-container">
                 <Img src="/img/hexagon.svg"/>
             </div>
-        </Link>
             <div className="logo-container">
                 <Img src="/img/logo.svg"/>
             </div>
+        </Link>
         </div>
-        <NavBar justifyContent="flex-end"/>
+        <NavBar justifyContent="flex-end hide-on-phone"/>
     </header>
 }
 

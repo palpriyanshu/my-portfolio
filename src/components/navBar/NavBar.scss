@@ -3,11 +3,9 @@
 .nav-bar{
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    width: 100%;
     color: $lightest-slate;
     font-family: $font-mono;
     counter-reset: item 0;
@@ -34,10 +32,14 @@
         background-color: transparent;
         color: $green;
         align-self: center;
-        border: 1px solid $green;
+        border: $border-size solid $green;
         font-size: $font-sm;
         font-family: $font-mono;
         border-radius: $border-radius;
+    }
+
+    .resume-button > a {
+        text-decoration: none;
     }
 
     .resume-button:hover, .resume-button:focus-visible {
@@ -46,6 +48,12 @@
         outline: none;
         box-shadow: 4px 4px 0 0 $green;
         transform: translate(-5px, -5px);
+    }
+
+    .hide-on-phone {
+      @media #{$phone-only} {
+        display: none;
+      }
     }
 }
 

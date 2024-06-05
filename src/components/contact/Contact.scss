@@ -1,0 +1,28 @@
+@import "../../style/theme.scss";
+
+.contact {
+  max-width: 1000px;
+  font-size: 20px;
+  justify-content: center;
+
+  .email-link {
+    color: $green;
+    background-color: transparent;
+    border: $border-size solid $green;
+    border-radius: $border-radius;
+    padding: 1.25rem 1.75rem;
+    font-size: $font-sm;
+    font-family: $font-mono;
+    line-height: 1;
+    text-decoration: none;
+    transition: $transition;
+    margin-top: 50px;
+  }
+
+  .email-link:hover, .email-link:focus-visible {
+    outline: none;
+    box-shadow: 4px 4px 0 0 $green;
+    transform: translate(-5px, -5px);
+    text-decoration: none;
+  }
+}

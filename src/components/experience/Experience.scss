@@ -1,0 +1,56 @@
+@import "../../style/theme.scss";
+
+.experience{
+    max-width: 1000px;
+    font-size: 20px;
+
+    .inner {
+        min-height: 340px;
+        display: flex;
+    }
+
+    .job {
+        display: flex;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        transition: $transition;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px 2px;
+        border-left: 2px solid $lightest-navy;
+        background-color: transparent;
+        color: $slate;
+        text-align: left;
+        border-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    .job:hover, .job:focus{
+        border-color: $green;
+        background-color: $light-navy;
+        outline: 0;
+    }
+
+    .job-detail{
+        font-family: $font-sans;
+        position: relative;
+        width: 100%;
+        margin-left: 20px;
+        color: $slate;
+    }
+
+    .job-duration {
+        font-family: $font-mono;
+        font-size: $font-md;
+        color: $slate;
+        align-self: baseline;
+        width: 80%;
+        text-align: left;
+    }
+
+    .job-duration:hover, .job-duration:focus-visible {
+        color: $green;
+    }
+
+}
